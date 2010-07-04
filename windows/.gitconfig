@@ -1,0 +1,16 @@
+[user]
+	email = colin.goudie@tributech.com.au
+	name = Colin Goudie
+[github]
+	user = gommo
+	token = f6e30707c3bbec5f833f823de606541d
+[gui]
+	recentrepo = D:/temp/qt
+[merge]
+	tool = TortoiseMerge
+[mergetool "TortoiseMerge"]
+	path = C:/Program Files/TortoiseSVN/bin/TortoiseMerge.exe
+	cmd = \"c:/Program Files/TortoiseSVN/bin/TortoiseMerge.exe\" /base:\"$BASE\" /mine:\"$LOCAL\" /theirs:\"$REMOTE\" /merged:\"$MERGED\"
+[core]
+	autocrlf = false
+	safecrlf = false
