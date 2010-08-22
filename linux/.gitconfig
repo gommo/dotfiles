@@ -1,0 +1,17 @@
+[user]
+	name = Colin Goudie
+	email = colin.goudie@tributech.com.au
+[core]
+	editor = vim
+[alias]
+        up = pull origin
+        st = status
+        di = diff
+        co = checkout
+        ci = commit
+        br = branch
+        sta = stash
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[github]
+	user = gommo
+	token = f6e30707c3bbec5f833f823de606541d
