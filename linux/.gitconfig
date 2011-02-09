@@ -1,0 +1,26 @@
+[user]
+	email = colin.goudie@tributech.com.au
+	name = Colin Goudie
+[alias]
+	up = pull origin
+	st = status
+	di = diff
+	co = checkout
+	ci = commit
+	br = branch
+	sta = stash
+#	lg = log --pretty=oneline --abbrev-commit --graph --decorate
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr%Creset by %C(yellow)%an%Cgreen)%Creset' --abbrev-commit --date=relative 
+
+[core]
+	pager = most +s +'/---'
+	editor = vim
+[merge]
+	tool = meld
+
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 700x550+0+48
+	file-view-hpane-position = 264
+	file-view-vpane-position = 579
+	main-window-view = FileView
