@@ -10,7 +10,7 @@
 	br = branch
 	sta = stash
 #	lg = log --pretty=oneline --abbrev-commit --graph --decorate
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr%Creset by %C(yellow)%an%Cgreen)%Creset' --abbrev-commit --date=relative 
 
 [core]
 	pager = most +s +'/---'
