@@ -15,6 +15,9 @@
 [core]
 	pager = most +s +'/---'
 	editor = vim
+	autocrlf = false
+	safecrlf = false
+
 [merge]
 	tool = meld
 
