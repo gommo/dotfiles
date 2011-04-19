@@ -18,9 +18,10 @@
 	autocrlf = false
 	safecrlf = false
 
+[svn]
+	rmdir = true
 [merge]
 	tool = meld
-
 [giggle]
 	main-window-maximized = true
 	main-window-geometry = 700x550+0+48
