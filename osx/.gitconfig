@@ -13,21 +13,17 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr%Creset by %C(yellow)%an%Cgreen)%Creset' --abbrev-commit --date=relative 
 
 [core]
-	pager = most +s +'/---'
+#	pager = most +s +'/---'
 	editor = vim
 	autocrlf = false
 	safecrlf = false
 
-[svn]
-	rmdir = true
 [merge]
 	tool = meld
+
 [giggle]
 	main-window-maximized = true
 	main-window-geometry = 700x550+0+48
 	file-view-hpane-position = 264
 	file-view-vpane-position = 579
 	main-window-view = FileView
-
-[svn]
-	rmdir = true
