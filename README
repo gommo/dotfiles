@@ -1,0 +1,9 @@
+Work in progress :)
+
+Directory Layout
+os-linux
+ - Contains home directory for osx and linux based systems
+
+windows
+ - Windows specific files
+

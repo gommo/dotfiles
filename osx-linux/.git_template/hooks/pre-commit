@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+exec < /dev/tty
+
+if  grep -rI --exclude='pre-commit' '<<<' *; then
+	echo 'There are merge conflicts still present. Do you still want to commit? (y/n)'
+	
+	read answer
+
+	case $answer in
+		"y" )
+			exit 0
+		;;
+		"Y" )
+			exit 0
+		;;
+	esac
+
+	exit 1
+fi
+
+exit 0
