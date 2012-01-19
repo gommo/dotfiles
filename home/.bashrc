@@ -1,13 +1,18 @@
-export EDITOR=vim
-export ANT_HOME=/opt/ant
-export ROO=/opt/roo
-export MYSQL_HOME=/usr/local/mysql
-export ATLAS_SDK=/opt/atlas-sdk
-export M2_HOME=/opt/maven
-export M3_HOME=/opt/m3
-export MAVEN_COLOR=true
-export MAVEN_OPTS=-Xmx2G
-export PATH=$M2_HOME/bin::$M3_HOME/bin:$PATH:$ATLAS_SDK/bin:$MYSQL_HOME/bin:$ROO/bin:$ANT_HOME/bin
+system_name=`uname -s`
+
+. ~/.aliases/commands
+. ~/.aliases/git
+
+if [ $system_name == 'Linux' ]; then
+    [ -f /etc/bash_completion ] && . /etc/bash_completion		
+
+    . ~/.exports/linux
+else
+    if [ -f `brew --prefix`/etc/bash_completion ]; then
+        . `brew --prefix`/etc/bash_completion
+    fi
+    . ~/.exports/osx
+fi
 
 CLICOLOR=1
 LSCOLORS=DxGxcxdxCxcgcdabagacad
