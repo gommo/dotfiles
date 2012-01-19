@@ -1,0 +1,5 @@
+alias s='git status --short'
+alias glp='git log -p'
+
+# Add more from BH - https://github.com/benhoskings/dot-files/blob/master/files/.aliases/git
+
