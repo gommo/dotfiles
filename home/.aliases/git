@@ -2,6 +2,10 @@ alias s='git status --short'
 alias glp='git log -p'
 alias gco='git co'
 
+alias ga='git add .'
+alias gc='git commit'
+alias gca='git commit -a'
+
 #git smart aliases - 'gem install git-smart'
 alias gup='git smart-pull'
 alias gl='git smart-log'
