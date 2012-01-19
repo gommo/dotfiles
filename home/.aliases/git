@@ -1,5 +1,10 @@
 alias s='git status --short'
 alias glp='git log -p'
 
+#git smart aliases - 'gem install git-smart'
+alias gup='git smart-pull'
+alias gl='git smart-log'
+alias gm='git smart-merge'
+
 # Add more from BH - https://github.com/benhoskings/dot-files/blob/master/files/.aliases/git
 

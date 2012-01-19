@@ -13,7 +13,7 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr%Creset by %C(yellow)%an%Cgreen)%Creset' --abbrev-commit --date=relative 
 
 [core]
-#	pager = most +s +'/---'
+	pager = most +s +'/---'
 	editor = vim
 	autocrlf = false
 	safecrlf = false
