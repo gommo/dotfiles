@@ -3,7 +3,7 @@
 
 exec < /dev/tty
 
-if  grep -rI '<<<' *; then
+if  grep -rI --exclude='pre-commit' '<<<' *; then
 	echo 'There are merge conflicts still present. Do you still want to commit? (y/n)'
 	
 	read answer

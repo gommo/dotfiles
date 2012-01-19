@@ -1,0 +1,44 @@
+[user]
+	email = colin.goudie@tributech.com.au
+	name = Colin Goudie
+[alias]
+	up = pull origin
+	st = status 
+	di = diff
+	co = checkout
+	ci = commit
+	br = branch
+	sta = stash
+#	lg = log --pretty=oneline --abbrev-commit --graph --decorate
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr%Creset by %C(yellow)%an%Cgreen)%Creset' --abbrev-commit --date=relative 
+
+[core]
+#	pager = most +s +'/---'
+	editor = vim
+	autocrlf = false
+	safecrlf = false
+	excludesfile = /Volumes/Data/Users/colin/.gitignore_global
+
+[merge]
+	tool = meld
+
+[svn]
+	rmdir = true
+
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 700x550+0+48
+	file-view-hpane-position = 264
+	file-view-vpane-position = 579
+	main-window-view = FileView
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	ui = always
+[github]
+	user = gommo
+	token = f6e30707c3bbec5f833f823de606541d
