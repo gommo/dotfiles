@@ -3,7 +3,7 @@
 	name = Colin Goudie
 [alias]
 	up = pull origin
-	st = status 
+	st = status
 	di = diff
 	co = checkout
 	ci = commit
