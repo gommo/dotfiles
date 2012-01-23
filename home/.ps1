@@ -1,6 +1,8 @@
 #!/bin/bash
+
+
 if [ $system_name == 'Linux' ]; then
-    export PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(git branch &>/dev/null; if [ $? -eq 0 ]; then echo " (    $(git branch | grep '^*' |sed s/\*\ //))"; fi)\$ '
+    export PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(git branch &>/dev/null; if [ $? -eq 0 ]; then echo " ($(git branch | grep '^*' |sed s/\*\ //))"; fi)\$ '
 else
       if [[ -s /Volumes/Data/Users/colin/.rvm/scripts/rvm ]] ; then source /Volumes/Data/Users/colin/.rvm/scripts/rvm ; fi
   
