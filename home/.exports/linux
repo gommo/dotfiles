@@ -1,3 +1,5 @@
+[[ -s "/home/gommo/.rvm/scripts/rvm" ]] && source "/home/gommo/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 export PATH=/opt/cmake/cmake-2.8.5/bin:$PATH
 
 . /opt/setenv.sh
