@@ -5,6 +5,7 @@ alias gco='git co'
 alias ga='git add .'
 alias gc='git commit'
 alias gca='git commit -a'
+alias gpm='git push origin master'
 
 #git smart aliases - 'gem install git-smart'
 alias gup='git smart-pull'
