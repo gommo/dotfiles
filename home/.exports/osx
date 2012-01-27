@@ -9,3 +9,8 @@ export M3_HOME=/opt/m3
 export MAVEN_COLOR=true 
 export MAVEN_OPTS=-Xmx2G 
 export PATH=$M2_HOME/bin:$M3_HOME/bin:$PATH:$ATLAS_SDK/bin:$MYSQL_HOME/bin:$ROO/bin:$ANT_HOME/bin
+
+if [[ -s /Volumes/Data/Users/colin/.rvm/scripts/rvm ]] ; then source /Volumes/Data/Users/colin/.rvm/scripts/rvm ; fi
+ 
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+

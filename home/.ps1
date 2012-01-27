@@ -1,12 +1,12 @@
 #!/bin/bash
 
 
-if [ $system_name == 'Linux' ]; then
-    export PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(git branch &>/dev/null; if [ $? -eq 0 ]; then echo " ($(git branch | grep '^*' |sed s/\*\ //))"; fi)\$ '
-else
-      if [[ -s /Volumes/Data/Users/colin/.rvm/scripts/rvm ]] ; then source /Volumes/Data/Users/colin/.rvm/scripts/rvm ; fi
+#if [ $system_name == 'Linux' ]; then
+#    export PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(git branch &>/dev/null; if [ $? -eq 0 ]; then echo " ($(git branch | grep '^*' |sed s/\*\ //))"; fi)\$ '
+#else
+#      if [[ -s /Volumes/Data/Users/colin/.rvm/scripts/rvm ]] ; then source /Volumes/Data/Users/colin/.rvm/scripts/rvm ; fi
   
-      export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+#      export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
     c_cyan=`tput setaf 6`
     c_red=`tput setaf 1`
@@ -44,4 +44,4 @@ else
 	 #PS1='[\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]] \u@\[${c_red}\]\w\[${c_sgr0}\]: '
 
      export PS1='[\u@\h \w$(__git_ps1 " (\[$(branch_color)\]%s\[${c_sgr0}\])")]\$ '
-fi
+#fi
