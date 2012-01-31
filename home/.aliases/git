@@ -12,5 +12,9 @@ alias gup='git smart-pull'
 alias gl='git smart-log'
 alias gm='git smart-merge'
 
+#Git SVN
+alias gsu='git svn rebase'
+alias gsc='git svn dcommit'
+
 # Add more from BH - https://github.com/benhoskings/dot-files/blob/master/files/.aliases/git
 
