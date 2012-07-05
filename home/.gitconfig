@@ -38,7 +38,7 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [color]
-	ui = always
+	ui = true
 [github]
 	user = gommo
 	token = f6e30707c3bbec5f833f823de606541d
