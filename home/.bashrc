@@ -97,5 +97,8 @@ LSCOLORS=DxGxcxdxCxcgcdabagacad
 
 export CLICOLOR LSCOLORS
 
-source ~/.git-completion.sh
+#source ~/.completions/git-completion.sh
+source ~/.completions/*.sh
 source ~/.ps1
+
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

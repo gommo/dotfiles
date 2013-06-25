@@ -3,14 +3,16 @@ export EDITOR=vim
 export ANT_HOME=/opt/ant
 export ROO=/opt/roo
 export MYSQL_HOME=/usr/local/mysql
-export ATLAS_SDK=/opt/atlas-sdk
-export M2_HOME=/opt/maven
-export M3_HOME=/opt/m3 
+#export ATLAS_SDK=/opt/atlas-sdk
+#export M2_HOME=/opt/maven
+#export M3_HOME=/opt/m3 
 export MAVEN_COLOR=true 
 export MAVEN_OPTS=-Xmx2G 
-export PATH=$M2_HOME/bin:$M3_HOME/bin:$PATH:$ATLAS_SDK/bin:$MYSQL_HOME/bin:$ROO/bin:$ANT_HOME/bin
+export PATH=$M2_HOME/bin:$M3_HOME/bin:$PATH:$MYSQL_HOME/bin:$ROO/bin:$ANT_HOME/bin
 
 if [[ -s /Volumes/Data/Users/colin/.rvm/scripts/rvm ]] ; then source /Volumes/Data/Users/colin/.rvm/scripts/rvm ; fi
- 
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+
+# Hack so homebrew is happy
+export PATH=/usr/local/bin:$PATH
+#export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
