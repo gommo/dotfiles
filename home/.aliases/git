@@ -6,6 +6,7 @@ alias ga='git add .'
 alias gc='git commit'
 alias gca='git commit -a'
 alias gpm='git push origin master'
+alias gp='git push'
 
 #git smart aliases - 'gem install git-smart'
 alias gup='git smart-pull'
@@ -18,3 +19,8 @@ alias gsc='git svn dcommit'
 
 # Add more from BH - https://github.com/benhoskings/dot-files/blob/master/files/.aliases/git
 
+# Git flow - May need to update ../completions/git-alias-completions.sh as well
+alias gfi='git flow init'
+alias gf='git flow feature'
+alias gr='git flow release'
+alias gh='git flow hotfix'
