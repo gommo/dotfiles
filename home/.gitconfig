@@ -44,3 +44,5 @@
 	token = f6e30707c3bbec5f833f823de606541d
 [init]
 	templatedir = ~/.git_template
+[push]
+	default = simple

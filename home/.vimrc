@@ -11,7 +11,6 @@ colorscheme desert
 "set cursorline
 hi clear CursorLine
 hi CursorLine term=bold cterm=bold gui=bold guibg=Grey40
-set transparency=15
 set background=dark
 syntax on
 

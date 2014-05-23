@@ -12,7 +12,11 @@ export PATH=$M2_HOME/bin:$M3_HOME/bin:$PATH:$MYSQL_HOME/bin:$ROO/bin:$ANT_HOME/b
 
 if [[ -s /Volumes/Data/Users/colin/.rvm/scripts/rvm ]] ; then source /Volumes/Data/Users/colin/.rvm/scripts/rvm ; fi
 
+export GDAL=/Library/Frameworks/GDAL.framework/Versions/Current/Programs
+export PSQL=/Applications/Postgres93.app/Contents/MacOS/bin/
+
 # Hack so homebrew is happy
-export PATH=/usr/local/bin:$PATH
+export PATH=$PSQL:/usr/local/bin:$PATH:$GDAL
+export PROJSO=/Library/Frameworks/PROJ.framework/PROJ
 #export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
