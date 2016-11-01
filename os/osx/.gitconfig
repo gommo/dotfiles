@@ -13,13 +13,17 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr%Creset by %C(yellow)%an%Cgreen)%Creset' --abbrev-commit --date=relative 
 
 [core]
-#	pager = most +s +'/---'
+	pager = most +s +'/---'
 	editor = vim
 	autocrlf = false
 	safecrlf = false
+	excludesfile = /Users/colin/.gitignore_global
 
 [merge]
 	tool = meld
+
+[svn]
+	rmdir = true
 
 [giggle]
 	main-window-maximized = true
@@ -27,3 +31,18 @@
 	file-view-hpane-position = 264
 	file-view-vpane-position = 579
 	main-window-view = FileView
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	ui = true
+[github]
+	user = gommo
+	token = f6e30707c3bbec5f833f823de606541d
+[init]
+	templatedir = ~/.git_template
+[push]
+	default = simple
