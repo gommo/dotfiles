@@ -1,3 +1,5 @@
-[ -f ~/.bashrc ] && . ~/.bashrc
+[[ -s ~/.bashrc ]] && source ~/.bashrc
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+eval "$(rbenv init -)"
+#export PATH=/Users/colin/.nvm/versions/node/v6.11.0/bin:$PATH
