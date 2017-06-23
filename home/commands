@@ -1,0 +1,21 @@
+alias df='df -h'
+alias less='less -R'
+
+if [ $system_name == 'Linux' ]; then
+    color_option='--color=auto'
+    alias du='du -k --max-depth=1'
+else
+    color_option='-G'
+
+    alias du='du -k -d1'
+    alias top='top -o cpu'
+fi
+
+alias ls="ls $color_option"
+alias ll="ls -lh $color_option"
+alias la="ls -a $color_option"
+alias lal="ls -lha $color_option"
+
+
+alias br="bundle exec rake"
+alias dbm="bundle exec rake db:migrate"
